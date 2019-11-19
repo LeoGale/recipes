@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string.h>
 
-#include "has_class_member.h"
+#include "check_has_member.h"
 
 DECLARE_HAS_MEMBER(name)
 
