@@ -7,7 +7,7 @@ struct has_member_##NAME \
   
   template<class U> \
   constexpr static std::false_type() check(...); \
-  static constexpr bool value = decltype(check<T>(nullptr))::value; \
+  constexpr static bool value = decltype(check<T>(nullptr))::value; \
 };
 
 #define HAS_CLASS_MEMBER(CLASS, MEMBER, ...) \
